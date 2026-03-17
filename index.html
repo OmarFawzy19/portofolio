@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omar Mahmoud | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Omar Mahmoud, Software Engineer and MERN Stack Developer."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header" id="top">
+      <nav class="navbar container">
+        <a href="#home" class="brand">Omar Mahmoud</a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="section hero">
+        <div class="container hero-content reveal">
+          <p class="intro">Hello, I'm</p>
+          <h1>Omar Mahmoud</h1>
+          <h2>Software Engineer | MERN Stack Developer</h2>
+          <p class="summary">
+            Software Engineer specializing in MERN Stack development with experience in
+            building full-stack web applications, RESTful APIs, and database-driven systems.
+          </p>
+          <div class="hero-actions">
+            <a href="#" class="btn btn-primary" download>Download CV</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container reveal">
+          <h2 class="section-title">About</h2>
+          <p class="section-text">
+            I'm a passionate software engineer focused on crafting reliable, scalable web
+            applications and continuously improving my skills through hands-on learning. My
+            core strength is the MERN stack, where I build backend services, APIs, and
+            interactive interfaces while following clean code principles, maintainable
+            architecture, and collaborative development practices.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container reveal">
+          <h2 class="section-title">Skills</h2>
+          <div class="skills-wrapper">
+            <div>
+              <h3>Technical Skills</h3>
+              <div class="skills-grid">
+                <div class="skill-card">⚡ JavaScript (ES6+)</div>
+                <div class="skill-card">🟩 Node.js</div>
+                <div class="skill-card">🚀 Express.js</div>
+                <div class="skill-card">🍃 MongoDB</div>
+                <div class="skill-card">🗄️ MySQL</div>
+                <div class="skill-card">🔗 REST APIs</div>
+                <div class="skill-card">🌐 HTML5</div>
+                <div class="skill-card">🎨 CSS3</div>
+                <div class="skill-card">🧰 Git & GitHub</div>
+                <div class="skill-card">📬 Postman</div>
+              </div>
+            </div>
+            <div>
+              <h3>Soft Skills</h3>
+              <div class="skills-grid">
+                <div class="skill-card">🧩 Problem Solving</div>
+                <div class="skill-card">💬 Communication</div>
+                <div class="skill-card">🤝 Teamwork</div>
+                <div class="skill-card">🧠 Critical Thinking</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container reveal">
+          <h2 class="section-title">Projects</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <h3>Social App (Backend)</h3>
+              <p>RESTful APIs for authentication, posts, likes, comments.</p>
+              <span>Node.js • Express • MongoDB</span>
+            </article>
+            <article class="project-card">
+              <h3>Sarahah App (Backend)</h3>
+              <p>Anonymous messaging system with secure API architecture.</p>
+              <span>Node.js • Express • MongoDB</span>
+            </article>
+            <article class="project-card">
+              <h3>Blog System (Backend)</h3>
+              <p>Blog system with authentication and full CRUD functionality.</p>
+              <span>Node.js • Express • MySQL</span>
+            </article>
+            <article class="project-card">
+              <h3>Weather Web App</h3>
+              <p>Real-time weather updates through a third-party API integration.</p>
+              <span>JavaScript • HTML • CSS</span>
+            </article>
+            <article class="project-card">
+              <h3>Agricultural Mobile Robot</h3>
+              <p>Embedded robotics project powered by ESP32 and robotic arm control.</p>
+              <span>C/C++ • Embedded Systems</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container reveal">
+          <h2 class="section-title">Contact</h2>
+          <div class="contact-grid">
+            <div class="contact-info">
+              <p><strong>Email:</strong> <a href="mailto:om0234445@gmail.com">om0234445@gmail.com</a></p>
+              <p><strong>Phone:</strong> <a href="tel:+201123238038">+201123238038</a></p>
+              <p>
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/omarmahmoud97" target="_blank" rel="noreferrer">
+                  linkedin.com/in/omarmahmoud97
+                </a>
+              </p>
+              <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/OmarFawzy19" target="_blank" rel="noreferrer">
+                  github.com/OmarFawzy19
+                </a>
+              </p>
+            </div>
+
+            <form class="contact-form" action="#" method="post">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" />
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email" />
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Omar Mahmoud. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/omarmahmoud97" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/OmarFawzy19" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="mailto:om0234445@gmail.com">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -13,6 +13,13 @@ links.forEach((link) => {
   });
 });
 
+document.addEventListener('click', (event) => {
+  const clickOutsideMenu = !navLinks.contains(event.target) && !menuToggle.contains(event.target);
+  if (clickOutsideMenu) {
+    navLinks.classList.remove('open');
+  }
+});
+
 // Highlight active nav item based on visible section
 const sections = document.querySelectorAll('main section[id]');
 

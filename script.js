@@ -43,6 +43,11 @@ window.addEventListener('load', updateActiveLink);
 
 // Scroll reveal animation
 const revealElements = document.querySelectorAll('.reveal');
+
+const projectCards = document.querySelectorAll('.projects-showcase .project-card');
+projectCards.forEach((card, index) => {
+  card.style.transitionDelay = `${140 + index * 90}ms`;
+});
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {

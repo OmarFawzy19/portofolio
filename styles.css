@@ -379,6 +379,13 @@ img {
   color: #e3e9ff;
 }
 
+.project-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1.1fr 1fr;

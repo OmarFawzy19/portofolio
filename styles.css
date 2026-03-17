@@ -383,6 +383,29 @@ img {
   opacity: 1;
 }
 
+.project-overlay .btn {
+  opacity: 0;
+  transform: translateY(10px) scale(0.96);
+  transition: opacity 0.35s ease, transform 0.35s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover .project-overlay .btn {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.project-overlay .btn:hover,
+.project-actions-mobile .btn:hover {
+  transform: translateY(-2px) scale(1.03);
+}
+
+.project-actions-mobile {
+  display: none;
+  gap: 0.6rem;
+  margin-top: 0.25rem;
+  flex-wrap: wrap;
+}
+
 .project-body {
   display: flex;
   flex-direction: column;
@@ -611,5 +634,9 @@ img {
   .project-overlay {
     opacity: 1;
     background: linear-gradient(180deg, rgba(5, 8, 21, 0.1), rgba(5, 8, 21, 0.55));
+  }
+
+  .project-actions-mobile {
+    display: flex;
   }
 }

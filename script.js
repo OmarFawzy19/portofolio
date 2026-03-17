@@ -54,7 +54,10 @@ const observer = new IntersectionObserver(
   { threshold: 0.15 }
 );
 
-revealElements.forEach((el) => observer.observe(el));
+revealElements.forEach((el, index) => {
+  el.style.transitionDelay = `${Math.min(index * 50, 280)}ms`;
+  observer.observe(el);
+});
 
 // Dynamic footer year
 document.getElementById('year').textContent = new Date().getFullYear();
